@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Fav cricketer
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body >
+       
+        <img src="kl1.jpeg" onmouseout="kl1()" onmouseover="kl()" class="img" id="img" >
+        <h1 class="heading">K L Rahul</h1>
+        <div class="details">
+            <p><strong>Age: </strong> 26</p>
+            <p><strong>Birth place: </strong> Mangalore</p>
+            <p><strong> 100s/50s: </strong> 10/25</p>
+            <p><strong> Teams played: </strong> India,RCB,KX1P </p>
+            <button onclick=" fun()" class="but">Personal details</button>
+            <p id="di">Rahul was born on 18 April 1992 to K. N. Lokesh and Rajeshwari in Mulki,Mangalore; his father Lokesh is a professor and former director at the National Institute of Technology Karnataka (NITK) in the city and his mother Rajeshwari is a professor at Mangalore University. Lokesh, who was a fan of the cricketer Sunil Gavaskar, wanted to name his son after Gavaskar's, but mistook Rohan Gavaskar's name as Rahul.[6]
+                Rahul grew up in Mangalore, completing his high school at NITK English Medium School and pre-university at St. Aloysius College. He started cricket training at the age of 10, and, two years later, started playing matches for both Bangalore United Cricket Club and his club in Mangalore. At age 18 he moved to Bangalore to study at Jain University and pursue his cricket career</p>
+        </div>
+       
+       <marquee behavior="scroll" direction="right"><strong>Prev match stat: </strong>108*(118)</marquee>
+    </body>
+    <script>
+        function fun() {
+            var x = document.getElementById("di");
+             if (x.style.display === "none") {
+                x.style.display = "block";
+             } else {
+                x.style.display = "none";
+             }
+           }
+        function kl1(){
+            document.getElementById("img").src="kl1.jpeg";
+        }
+        function kl(){
+            document.getElementById("img").src="kl.jpeg";
+        }
+    </script>
+</html>

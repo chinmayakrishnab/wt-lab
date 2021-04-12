@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Fav cricketer
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body >
+       <h1 class="heading">Guess the Number </h1>
+
+       <div class="details">
+       <p>Try your Luck :)</p>
+       <p>Number: 
+       <input type="text" name="nu" placeholder="Your Number" class="fi" id="qw">
+       </p>
+       <button onclick=" fun()" type="submit" class="but">Submit</button>
+       </div>
+       
+       
+      
+
+    </body>
+    <script>
+        function fun(){
+       var x= document.getElementById("qw").value;
+         if(x==5){
+             alert("Yayy! your guess is right!!!");
+         }else if(x<5){
+            alert("Your guess is Low! Try again");
+         }else{
+            alert("Your guess is high! Try again");
+         }
+            
+        }
+    </script>
+</html>

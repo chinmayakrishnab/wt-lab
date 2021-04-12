@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Fav cricketer
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body >
+       <h1 class="heading">Even or Odd </h1>
+
+       <div class="details">
+       <p>Given me a Number I'll tell you whether its EVEN or ODD :)</p>
+       </p>
+       <button onclick=" fun()" type="submit" class="but">Click here</button>
+       <p id="even"></p>
+       </div>
+       
+       
+      
+
+    </body>
+    <script>
+        function fun(){
+       var x= prompt("enter the number");
+        if(x%2==0){
+            document.getElementById("even").innerHTML=" Your Number "+ x + " is EVEN";
+        }else{
+            document.getElementById("even").innerHTML=" Your Number "+ x + " is ODD";
+        }
+            
+        }
+    </script>
+</html>
