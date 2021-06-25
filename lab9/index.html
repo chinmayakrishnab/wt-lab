@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>login</title>
+    </head>
+    <body>
+        <label>NAME</label><br>
+        <input type="text" id="name"><br>
+        <label>PASSWORD</label><br>
+        <input type="text" id="pd"><br>
+        <label>PHONE NUMBER</label><br>
+        <input type="text" id="pn"><br>
+        <label>AGE</label><br>
+        <input type="text" id="age"><br>
+        <label>GENDER</label><br>
+        <input type="text" id="gen"><br><br>
+        <br>
+        <p id="hello"></p>
+        <button onclick="myfunc()">Save</button>
+    </body>
+    <script>
+        var array = Array();
+        let cnt=0;
+        function myfunc()
+        {
+            let na = document.getElementById("name").value;
+            let pwd = document.getElementById("pd").value;
+            let phno = document.getElementById("pn").value;
+            let a = document.getElementById("age").value;
+            let ge = document.getElementById("gen").value;
+            let per = new obj(na,pwd,phno,a,ge);
+            
+            function obj(name,pwd,pno,age,gen)
+            {
+                this.name=name;
+                this.pwd=pwd;
+                this.pno=pno;
+                this.age=age;
+                this.gen=gen;
+            }
+            array.forEach(check)
+            function check(val)
+            {
+                if(val!=per.name)
+    {
+        cnt++;
+        }
+    }
+    if(cnt==array.length)
+    {
+        array.push(per);
+            /*array.push(per.pwd);
+            array.push(per.pno);
+            array.push(per.age);
+            array.push(per.gen);*/
+            document.getElementById("hello").innerHTML="added";
+  
+            }
+            else
+            document.getElementById("hello").innerHTML="already exists";
+        }
+        
+                
+    </script>
+</html>
