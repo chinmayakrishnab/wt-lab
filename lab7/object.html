@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>objects</title>
+	<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+<style>
+	body{
+		
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Planets</h1>
+    <p class="lead">Information of 8 planets.</p>
+  </div>
+</div>
+<button type="button" class="btn btn-danger" onclick="m()">Mercury </button>
+<button type="button" class="btn btn-danger" onclick="v()">Venus</button>
+<button type="button" class="btn btn-danger" onclick="e()">Earth</button>
+<button type="button" class="btn btn-danger" onclick="ma()">Mars</button>
+<button type="button" class="btn btn-danger" onclick="j()">Jupiter</button>
+<button type="button" class="btn btn-danger" onclick="s()">Saturn</button>
+<button type="button" class="btn btn-danger" onclick="u()">Uranus </button>
+<button type="button" class="btn btn-danger" onclick="n()">Neptune</button>
+
+<br/>	
+<p id="m"></p>
+</body>
+<script>
+		function planets(name,moons,distance){
+			this.name=name;
+			this.moons=moons;
+			this.distance=distance;
+			}
+        function m(){
+			var mer = new planets("Mercury", 0, 36);
+			 document.getElementById("m").innerHTML ="Planet " + mer.name + " "+ " has " + mer.moons + " moon and distance from sun is "+mer.distance+" miles "; 
+			}
+			function v(){
+				var ven = new planets("Venus", 0, 67);
+				 document.getElementById("m").innerHTML ="Planet " + ven.name + " "+ " has " + ven.moons + " moon and distance from sun is "+ven.distance+" miles ";
+			}
+			function e(){
+				var ear = new planets("Earth", 1, 93);
+				document.getElementById("m").innerHTML ="Planet " + ear.name + " "+ " has " + ear.moons + " moon and distance from sun is "+ear.distance+" miles ";
+			}
+			function ma(){
+				var mar = new planets("Mars", 2, 141);
+				document.getElementById("m").innerHTML ="Planet " + mar.name + " "+ " has " + mar.moons + " moons and distance from sun is "+mar.distance+" miles "; 
+			}
+			function j(){
+				var jup = new planets("Jupiter", 67, 483);
+				document.getElementById("m").innerHTML ="Planet " + jup.name + " "+ " has " + jup.moons + " moons and distance from sun is "+jup.distance+" miles "; 
+			}
+			function s(){
+				var sat = new planets("Saturn", 62, 886);
+				document.getElementById("m").innerHTML ="Planet " + sat.name + " "+ " has " + sat.moons + " moons and distance from sun is "+sat.distance+" miles "; 
+			}
+			function u(){
+				var ura = new planets("Uranus", 27, 1784);
+				document.getElementById("m").innerHTML ="Planet " + ura.name + " "+ " has " + ura.moons + " moons and distance from sun is "+ura.distance+" miles "; 
+			}
+		 function n(){
+		 	var nep = new planets("Neptune", 13, 2794);
+            document.getElementById("m").innerHTML ="Planet " + nep.name + " "+ " has " + nep.moons + " moons and distance from sun is "+nep.distance+" miles "; 
+		 }
+			
+           
+             
+            
+          
+            
+            
+            
+
+</script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</html>

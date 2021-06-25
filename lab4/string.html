@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">String Properties</h1>
+ 
+  </div>
+</div>
+
+<button class="btn btn-primary" onclick="myFunction()">string length</button>
+<p id="demo"></p>
+
+<button class="btn btn-primary"onclick="func()">string locate</button>
+<p id="de"></p>
+
+<button class="btn btn-primary"onclick="myfunc()">string slice</button>
+<p id="d"></p>
+
+<button class="btn btn-primary"onclick="fun()">string replace</button>
+<p id="dem">Hello world</p>
+
+
+<button class="btn btn-primary"onmouseover="toupr()">Make it caps</button><button class="btn btn-primary"onmouseover="tolwr()">Make it lows</button>
+<p id="hh">Hello World!</p>
+
+
+<button class="btn btn-primary"onclick="con()">string concat</button>
+<p id="con"></p>
+
+<script>
+function myFunction() {
+  var str = prompt("Please enter String !");
+  if (str != null) {
+  	var sln = str.length;
+   document.getElementById("demo").innerHTML = "length of " + str + " ->  " + sln;
+  }
+}
+
+function func(){
+	var str=prompt(" enter the strings ");
+	var loc=prompt("enter the string to locate ");
+	var pos = str.search(loc);
+    document.getElementById("de").innerHTML = "The position of word " + loc+ " in string " + str +" is -> " + pos;
+}
+
+function myfunc(){
+	var str=prompt(" enter the strings seperated by , ");
+	var pos=prompt("enter the position to slice ");
+    var res = str.slice(pos);
+    document.getElementById("d").innerHTML = "After slicing the result ->" + res;
+
+}
+
+function fun(){
+	var str = document.getElementById("dem").innerHTML; 
+	var word=prompt("enter the word to replace ");
+  var txt = str.replace("world",word);
+  document.getElementById("dem").innerHTML = txt;
+}
+
+function toupr() {
+  var text = document.getElementById("hh").innerHTML;
+  document.getElementById("hh").innerHTML = text.toUpperCase();
+}
+
+function tolwr() {
+  var text = document.getElementById("hh").innerHTML;
+  document.getElementById("hh").innerHTML = text.toLowerCase();
+}
+
+function con(){
+  var text1=prompt(" enter the first string ");
+  var text2=prompt("enter the second string ");
+    var text3 = text1.concat(" ",text2);
+document.getElementById("con").innerHTML = text3;
+
+}
+</script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
