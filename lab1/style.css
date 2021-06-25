@@ -1,0 +1,35 @@
+.heading{
+    text-align: center;
+    padding: 60px;
+    color:white;
+    background: #1abc9c;
+    font-size: 30px;
+}
+
+.registerbtn{
+    background-color: #4caf50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    display: inline-block;
+}
+
+.column{
+    float:left;
+    width: 30%;
+    padding: 5px;
+}
+
+.row::after{
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+.a{
+    color: inherit;
+    text-decoration: none;
+}
